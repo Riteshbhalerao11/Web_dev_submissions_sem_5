@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="parent" style="width: 100px; height: 100px; background-color: blueviolet; padding: 5px;">
+        <div id="child" style="background-color: aqua; width: 100%; height: 100%;">
+        </div>
+    </div>
+    <script>
+        const parent = document.getElementById("parent");
+        const child = document.getElementById("child");
+        parent.addEventListener("click", (event) => {
+            // event.stopPropagation();
+            console.log("Parent Capturing");
+        }, true)
+        child.addEventListener("click", () => {
+            console.log("Child Capturing");
+        }, true)
+        parent.addEventListener("click", (event) => {
+            // event.stopPropagation();
+            console.log("Parent Bubbling");
+        })
+        child.addEventListener("click", () => {
+            event.stopPropagation();
+            console.log("Child Bubbling");
+        })
+    </script>
+</body>
+</html>
