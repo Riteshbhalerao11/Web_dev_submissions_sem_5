@@ -1,0 +1,73 @@
+.units {
+  border-radius: 5px;
+  fill: #fff;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  width: 30%;
+  margin: 30px;
+  height: 50vh;
+  overflow: auto;
+  /* padding-bottom: 40px; */
+}
+
+.units .list-group-item {
+  color: #333;
+  font-weight: bold;
+  padding: 10px;
+  border: none;
+}
+
+.subtitle {
+  font-weight: normal;
+}
+
+.units .list-group-item:hover {
+  background-color: #ddd;
+}
+
+h4 {
+  margin-left: 10px;
+  margin-bottom: 20px;
+}
+
+#title > span {
+  padding: 0%;
+  margin-left: 5px;
+  font-size: 20px;
+}
+
+.utitle {
+  margin-bottom: 0;
+}
+
+#title {
+  position: sticky; /* Set it to sticky */
+  top: 0; /* Stick to the top of the container */
+  background: #fff; /* Set a background color or style if needed */
+  z-index: 1; /* Adjust the z-index as necessary to make it appear above the content */
+}
+
+/* Define the styles for the scrollbar track (the background) */
+::-webkit-scrollbar {
+  width: 12px; /* Set the width of the scrollbar */
+}
+
+/* Define the styles for the scrollbar thumb (the draggable part) */
+::-webkit-scrollbar-thumb {
+  background: #888; /* Set the background color of the thumb */
+  border-radius: 6px; /* Set the border radius for rounded corners */
+}
+
+/* Define the styles for the scrollbar track on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Change the background color on hover */
+}
+
+/* Define the styles for the scrollbar track (the background) on hover */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Set the background color of the track */
+}
+
+/* Define the styles for the scrollbar button (the arrows) */
+::-webkit-scrollbar-button {
+  display: none; /* Hide the scrollbar buttons (arrows) */
+}

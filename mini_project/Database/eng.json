@@ -1,0 +1,25 @@
+{
+    "listItems": [
+      {
+        "unit": "Unit 1",
+        "subtitle": "Basics -- Learn to order food !",
+        "percentageCompletion": 25
+      },
+      {
+        "unit": "Unit 2",
+        "subtitle": "Medium -- Now you can read books",
+        "percentageCompletion": 50
+      },
+      {
+        "unit": "Unit 3",
+        "subtitle": "Intermediate -- Somebody is on fire !",
+        "percentageCompletion": 75
+      },
+      {
+        "unit": "Unit 4",
+        "subtitle": "Expert -- You can now teach somebody. Good job !",
+        "percentageCompletion": 100
+      }
+    ]
+  }
+  
