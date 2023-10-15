@@ -25,7 +25,7 @@ export default function SignUp() {
       setError("");
       setLoading(true);
       await signup(emailRef.current.value, passwordRef.current.value);
-      navigate("/");
+      navigate("/parent");
     } catch (e) {
       setError("Failed to create account.");
       console.log(e);
@@ -73,7 +73,7 @@ export default function SignUp() {
           </Card.Body>
         </Card>
         <div className="w-100 text-center mt-2">
-          Already have an account? <Link to={"/login"}>Log In</Link>
+          Already have an account? <Link to={"/studentlogin"}>Log In</Link>
         </div>
       </div>
     </Container>

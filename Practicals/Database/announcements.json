@@ -1,0 +1,23 @@
+{
+  "announcements": [
+    {
+      "announcement": "Hey there this is a new announcement",
+      "date": "2023-10-27"
+    },
+    {
+      "announcement": "Hey there this is a new announcement 2",
+      "date": "2023-10-27"
+    },
+    { "announcement": "Hey there new announcement !", "date": "2023-10-28" },
+    { "announcement": "Hey there new announcement  34!", "date": "2023-10-28" },
+    {
+      "announcement": "Hey there new announcement alert !",
+      "date": "2023-10-12"
+    },
+    { "announcement": "AAA", "date": "2023-10-28" },
+    { "announcement": "Attendance is less ", "date": "2023-10-26" },
+    { "announcement": "heee", "date": "2023-10-26" },
+    { "announcement": "HEy where are u", "date": "2023-10-26" },
+    { "announcement": "Huehuehuehuehue", "date": "2023-10-30" }
+  ]
+}

@@ -1,19 +1,29 @@
 import React from "react";
-import { Container } from "react-bootstrap";
 import { AuthProvider } from "./contexts/AuthContext";
 import SignUp from "./components/signup";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./components/homepage";
+import Login from "./components/login";
+import Quiz from "./components/quizes.js";
+import QuizPage from "./components/quizSelect.js";
+import ScoresPage from "./components/scores";
+import { PrivateRoute } from "./privateroute";
 
 export default function App() {
   return (
-    <AuthProvider>
-      <Container
-        className="d-flex align-items-center justify-content-center"
-        style={{ minHeight: "100vh" }}
-      >
-        <div className="w-100" style={{ maxWidth: "400px" }}>
-          <SignUp />
-        </div>
-      </Container>
-    </AuthProvider>
+    <BrowserRouter>
+      <AuthProvider>
+        <Routes>
+          <Route path="/" element={<PrivateRoute />}>
+            <Route path="/" element={<Home />} />
+            <Route path="quiz/:Id" element={<Quiz />} />
+            <Route path="quiz" element={<QuizPage />} />
+            <Route path="scores" element={<ScoresPage />} />
+          </Route>
+          <Route path="/signup" element={<SignUp />} />
+          <Route path="/login" element={<Login />} />
+        </Routes>
+      </AuthProvider>
+    </BrowserRouter>
   );
 }

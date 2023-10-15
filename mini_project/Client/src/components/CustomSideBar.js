@@ -5,12 +5,32 @@ import LeaderboardIcon from "@mui/icons-material/Leaderboard";
 import { Quiz } from "@mui/icons-material";
 import LibraryBooksIcon from "@mui/icons-material/LibraryBooks";
 import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
+import LogoutIcon from "@mui/icons-material/Logout";
+import { useState } from "react";
+import { useAuth } from "../contexts/AuthContext";
+import { Link, useNavigate } from "react-router-dom";
 
-export default function CustomSideBar() {
+export default function CustomSideBar(props) {
+  const selected = props.selected;
+  const [error, setError] = useState("");
+  const { logout } = useAuth();
+  const navigate = useNavigate();
+
+  async function handleLogOut() {
+    setError("");
+    try {
+      await logout();
+      navigate("/login");
+    } catch (e) {
+      console.log(e);
+      setError("Failed to log out");
+    }
+  }
+
   return (
-    <Sidebar backgroundColor="white" style={{ height: "100vh" }}>
+    <Sidebar id="sb" backgroundColor="white">
       <Menu>
-        <MenuItem style={{ padding: "0px" }}>
+        <MenuItem id="Title-tile" style={{ padding: "0px" }}>
           <div
             style={{
               display: "flex",
@@ -19,9 +39,11 @@ export default function CustomSideBar() {
           >
             <img
               src={LingualBuddyLogo}
-              alt="LingualBuddy Logo"
-              height="60px"
-              width="60px"
+              style={{
+                height: 60,
+                width: 60,
+              }}
+              alt=""
             />
             <span
               style={{
@@ -35,17 +57,97 @@ export default function CustomSideBar() {
             </span>
           </div>
         </MenuItem>
-        <MenuItem icon={<HomeIcon style={{ marginRight: "20px" }} />}>
-          Home
+        <MenuItem
+          style={{
+            backgroundColor: selected === "home" ? "#228B22" : "white",
+          }}
+          icon={
+            <HomeIcon
+              style={{
+                marginRight: "20px",
+                color: selected === "home" ? "white" : "black",
+              }}
+            />
+          }
+        >
+          <Link
+            to={"/"}
+            style={{
+              color: selected === "home" ? "white" : "black",
+              textDecoration: "none",
+            }}
+          >
+            Home
+          </Link>
         </MenuItem>
-        <MenuItem icon={<LeaderboardIcon style={{ marginRight: "20px" }} />}>
-          Leaderboard
+        <MenuItem
+          style={{
+            backgroundColor: selected === "scores" ? "#228B22" : "white",
+            color: selected === "scores" ? "white" : "black",
+          }}
+          icon={
+            <LeaderboardIcon
+              style={{
+                marginRight: "20px",
+                color: selected === "scores" ? "white" : "black",
+              }}
+            />
+          }
+        >
+          <Link
+            style={{
+              color: selected === "scores" ? "white" : "black",
+              textDecoration: "none",
+            }}
+            to={"/scores"}
+          >
+            Scores
+          </Link>
         </MenuItem>
-        <MenuItem icon={<LibraryBooksIcon style={{ marginRight: "20px" }} />}>
+        <MenuItem
+          style={{
+            backgroundColor: selected === "courses" ? "#228B22" : "white",
+            color: selected === "courses" ? "white" : "black",
+          }}
+          icon={
+            <LibraryBooksIcon
+              style={{
+                marginRight: "20px",
+                color: selected === "courses" ? "white" : "black",
+              }}
+            />
+          }
+        >
           Courses
         </MenuItem>
-        <MenuItem icon={<Quiz style={{ marginRight: "20px" }} />}>
-          Quiz
+        <MenuItem
+          style={{
+            backgroundColor: selected === "quiz" ? "#228B22" : "white",
+          }}
+          icon={
+            <Quiz
+              style={{
+                marginRight: "20px",
+                color: selected === "quiz" ? "white" : "black",
+              }}
+            />
+          }
+        >
+          <Link
+            style={{
+              color: selected === "quiz" ? "white" : "black",
+              textDecoration: "none",
+            }}
+            to={"/quiz"}
+          >
+            Quiz
+          </Link>
+        </MenuItem>
+        <MenuItem
+          onClick={handleLogOut}
+          icon={<LogoutIcon style={{ marginRight: "20px" }} />}
+        >
+          Log Out
         </MenuItem>
         <SubMenu label="More" icon={<MoreHorizIcon />}>
           <MenuItem>Sign in</MenuItem>

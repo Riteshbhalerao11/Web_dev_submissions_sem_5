@@ -1,0 +1,34 @@
+{
+  "1": {
+    "topic": "Learning French",
+    "level": "Beginner",
+    "totalQuestions": 4,
+    "perQuestionScore": 5,
+    "questions": [
+      {
+        "question": "What is the French word for 'hello'?",
+        "choices": ["Bonjour", "Au revoir", "Merci", "Oui"],
+        "type": "MCQs",
+        "correctAnswer": "Bonjour"
+      },
+      {
+        "question": "Which of the following means 'thank you' in French?",
+        "choices": ["Merci", "S'il vous plaît", "Excusez-moi", "Oui"],
+        "type": "MCQs",
+        "correctAnswer": "Merci"
+      },
+      {
+        "question": "What is the French word for 'yes'?",
+        "choices": ["Oui", "Non", "Peut-être", "Bonsoir"],
+        "type": "MCQs",
+        "correctAnswer": "Oui"
+      },
+      {
+        "question": "How do you say 'goodbye' in French?",
+        "choices": ["Au revoir", "Bonjour", "Oui", "Merci"],
+        "type": "MCQs",
+        "correctAnswer": "Au revoir"
+      }
+    ]
+  }
+}

@@ -1,25 +1,106 @@
 {
-    "listItems": [
-      {
-        "unit": "Unit 1",
-        "subtitle": "Basics -- Learn to order food !",
-        "percentageCompletion": 25
-      },
-      {
-        "unit": "Unit 2",
-        "subtitle": "Medium -- Now you can read books",
-        "percentageCompletion": 50
-      },
-      {
-        "unit": "Unit 3",
-        "subtitle": "Intermediate -- Somebody is on fire !",
-        "percentageCompletion": 75
-      },
-      {
-        "unit": "Unit 4",
-        "subtitle": "Expert -- You can now teach somebody. Good job !",
-        "percentageCompletion": 100
-      }
-    ]
-  }
-  
+  "8p7ObjyMecPRsOpAVqPIiMrK6Iw1": [
+    {
+      "unit": "Unit 1",
+      "subtitle": "Introduction to French",
+      "percentageCompletion": 10
+    },
+    {
+      "unit": "Unit 2",
+      "subtitle": "Basic French Vocabulary",
+      "percentageCompletion": 20
+    },
+    {
+      "unit": "Unit 3",
+      "subtitle": "Simple French Conversations",
+      "percentageCompletion": 30
+    },
+    {
+      "unit": "Unit 4",
+      "subtitle": "Exploring French Culture",
+      "percentageCompletion": 40
+    },
+    {
+      "unit": "Unit 5",
+      "subtitle": "Intermediate French Grammar",
+      "percentageCompletion": 50
+    },
+    {
+      "unit": "Unit 6",
+      "subtitle": "Advanced French Conversations",
+      "percentageCompletion": 60
+    },
+    {
+      "unit": "Unit 7",
+      "subtitle": "French for Travel and Tourism",
+      "percentageCompletion": 70
+    },
+    {
+      "unit": "Unit 8",
+      "subtitle": "Business French",
+      "percentageCompletion": 80
+    },
+    {
+      "unit": "Unit 9",
+      "subtitle": "French Literature and Arts",
+      "percentageCompletion": 90
+    },
+    {
+      "unit": "Unit 10",
+      "subtitle": "Mastery of the French Language",
+      "percentageCompletion": 100
+    }
+  ],
+  "swnXcQbSTXNhAgA2EsNXLytgelC2": [
+    {
+      "unit": "Unit 1",
+      "subtitle": "Introduction to Japanese",
+      "percentageCompletion": 10
+    },
+    {
+      "unit": "Unit 2",
+      "subtitle": "Hiragana and Katakana Basics",
+      "percentageCompletion": 20
+    },
+    {
+      "unit": "Unit 3",
+      "subtitle": "Basic Japanese Conversations",
+      "percentageCompletion": 30
+    },
+    {
+      "unit": "Unit 4",
+      "subtitle": "Exploring Japanese Culture",
+      "percentageCompletion": 40
+    },
+    {
+      "unit": "Unit 5",
+      "subtitle": "Kanji Introduction",
+      "percentageCompletion": 50
+    },
+    {
+      "unit": "Unit 6",
+      "subtitle": "Intermediate Conversational Skills",
+      "percentageCompletion": 60
+    },
+    {
+      "unit": "Unit 7",
+      "subtitle": "Advanced Reading and Writing",
+      "percentageCompletion": 70
+    },
+    {
+      "unit": "Unit 8",
+      "subtitle": "Japanese for Travel",
+      "percentageCompletion": 80
+    },
+    {
+      "unit": "Unit 9",
+      "subtitle": "Business Japanese",
+      "percentageCompletion": 90
+    },
+    {
+      "unit": "Unit 10",
+      "subtitle": "Mastery of Japanese Language",
+      "percentageCompletion": 100
+    }
+  ]
+}
